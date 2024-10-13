@@ -19,7 +19,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh 'chmod +x ./scripts/deliver.sh'
-                sh 'sudo ./scripts/deliver.sh'
+                sh './scripts/deliver.sh'
             }
         }
     }
